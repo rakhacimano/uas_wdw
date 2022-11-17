@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.layout-width {
+  padding: 0 96px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  background: linear-gradient(
+    287.54deg,
+    #142530 0%,
+    #0e1113 49.59%,
+    #23152e 100%
+  );
+  line-height: 2;
+  font-weight: 300;
+}
+
+section {
+  height: 90vh;
+  padding-top: 7rem;
+}
+
+section.beranda {
+  padding-top: 0;
+}
+
+/* Scrollbar Custom */
+body::-webkit-scrollbar {
+  background-color: #01797e;
+  width: 4px;
+  height: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(128px);
+  box-shadow: 0px 16px 32px rgba(245, 246, 246, 0.04);
+}
+
+nav .nav-links a,
+a {
+  text-decoration: none;
+  margin-right: 2rem;
+  color: #eff0f0;
+  font-weight: 400;
+}
+
+.nav-links a:hover {
+  color: #01797e;
+  font-weight: 700;
+}
+
+.nav-cta a:hover {
+  color: #eff0f0;
+}
+
+nav .nav-logo a,
+nav .nav-links .link-end {
+  margin-right: 0;
+}
+
+.nav-cta a {
+  text-decoration: none;
+  background-color: #01797e;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+  font-weight: 700;
+  margin-right: 0;
+}
+/* End of Navbar Style */
+
+/* Beranda Style */
+section.beranda .background_beranda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 83%;
+  z-index: -1;
+}
+
+section.beranda .beranda_kontainer {
+  display: flex;
+  align-items: center;
+  height: 88vh;
+}
+
+span.tagline {
+  background-color: #01797e;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+}
+
+h1.headline {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.content_box--info {
+  background-color: #01797e;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.75rem 3rem;
+  border-radius: 0.25rem;
+}
+
+.box--acara {
+  margin-right: 4rem;
+}
+
+.acara--text {
+  margin-left: 1rem;
+}
+
+.title--text {
+  margin-bottom: -0.5rem;
+}
+/* End of Beranda Style */
+
+/* Tentang Style */
+section.tentang {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.tentang .tentang--right {
+  display: flex;
+  align-items: center;
+}
+
+section.tentang .tentang--right .foto--right {
+  margin-left: 3rem;
+}
+
+section.tentang .tentang--right .foto--right img, .foto--left img {
+  border-radius: .25rem;
+}
+
+.tentang .tentang--left h2.headline, 
+.destinasi .title h2.headline,
+.event .title h2.headline {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tentang .tentang--left .informasi h3.headline {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  margin-top: 3rem;
+  color: #01797e;
+}
+
+.tentang .tentang--left .informasi .jam,
+.jarak {
+  margin-right: 3rem;
+}
+/* End of Tentang Style */
+
+/* Destinasi Style */
+section.destinasi {
+  margin-bottom: 5rem;
+}
+
+section.destinasi .card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card--text h4.headline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #01797E;
+}
+
+.card--text  p.text {
+  color: #133A3C;
+  font-weight: 600;
+}
+
+.card--container .card {
+  border-radius: .25rem;
+}
+
+.card--container .card .card--image img {
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.card--container .card .button button {
+  background-color: #01797E;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+/* End of Destinasi Style */
+
+/* Event Style */
+section.event {
+  height: 100%;
+  padding-bottom: 5rem;
+}
+
+.event .content--container {
+  margin-top: 3rem;
+}
+
+.event .content--container .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.content-2 {
+  flex-direction: row-reverse;
+}
+
+.event .content--container .content .image {
+  padding: 1rem;
+  background-color: white;
+  border-radius: .25rem;
+  margin-right: 4rem;
+}
+
+.event .content--container .content-2 .image {
+  margin-right: 0;
+  margin-left: 4rem;
+}
+
+.event .content--container .content .description--container {
+  justify-content: flex-end;
+}
+
+.event .content--container .content .description--container .event--name {
+  margin-bottom: 2rem;
+}
+
+.event .content--container .content .description--container h3.headline {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #01797e;
+}
+
+.event .content--container .content .description--container .event--detail .detail--location,
+.detail--group,
+.detail--schedule {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.event .content--container .content-2 .description--container .event--detail .detail--location,
+.content-2 .detail--group,
+.content-2 .detail--schedule {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-direction: row-reverse;
+}
+
+.event .content--container .content .description--container .event--detail p.text {
+  margin: 0;
+  margin-left: .5rem;
+}
+
+.event .content--container .content-2 .description--container .event--detail p.text {
+  margin: 0;
+  margin-right: .5rem;
+}
+
+.event .content--container .content .description--container .button button {
+  background-color: #01797E;
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 48%;
+  border-radius: .25rem;
+  margin-top: 1rem;
+}
+
+.event .content--container .content-2 .description--container .button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* End of Event Style */
+
+/* Footer Style */
+footer {
+  background-color: #01797E;
+  border-radius: 2rem 2rem 0 0;
+  padding: 4rem 6rem 1rem 6rem !important;
+}
+
+footer .footer-container {
+  display: flex;
+  column-gap: 6rem;
+  margin-bottom: 4rem;
+}
+
+footer .footer-container .footer-desc {
+  padding-right: 6rem;
+}
+
+footer .footer-container .footer-links a {
+  display: block;
+}
+
+footer .footer-container .footer-links a:hover {
+  color: white;
+}
+
+footer h4.headline {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+footer .footer-container .footer-share .share-socmed {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+footer .footer-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* End of Footer Style */
